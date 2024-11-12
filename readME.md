@@ -12,8 +12,8 @@ The list in Python is just like the vector in C++
     list.append(4)#return [1,2,3,4]
 
     //C++
-    vector<int> v1 = (1,2,3,4,5);
-    v1.pushback(6); //return v1=(1,2,3,4,5,6)
+    vector<int> v1 = {1,2,3,4,5};
+    v1.pushback(6); //return v1={1,2,3,4,5,6}
 
 The header file should always be included. Note the header file no longer has ".h" than C
 
