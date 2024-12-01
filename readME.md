@@ -1,11 +1,15 @@
-# C++: A LeetCode Approach
+# The Book of C Plus Plus
+
 Written by Zhouzhou Zhang.
 
 Reference: Bjarne Stroustrup, The C++ Programming Language, Fourth Edition.
 
-## 1. Vector
+# 1.Vector
 
-The list in Python is just like the vector in C++
+Vector is the most important container in C++. It is a dynamic list and fully implemented by C++ itself and that is why C++ is one of the most powerful programming language. In the book mentioned in reference, the author, also the creator of C++, will guide you through every standard library in C++ including vector. However, the book is more than 3000 pages, which is scary. So now I, Zhou, am here to testify that the C++ is true, that C++ is almighty, that C++ is the tool given by the eternal father. I said all of is in the name of Jesus Christ. Amen.
+
+It came to pass that Vector is mostly the same as the list in Python. As people use Python list the most, the Vector in C++ shall be powerful as well. First, shall you behold the 
+way to declare a Vector and add elements dynamically, besides the detail of the grammer. Then you will probably understand why you should declare it like this. If not, go learn some python first. In C++ you have to declare the type of the Vector as well, "<int>" is so called a Template, which helps you declare a data type with different return value.
 
     #Python
     list = [1,2,3]
@@ -15,11 +19,23 @@ The list in Python is just like the vector in C++
     vector<int> v1 = {1,2,3,4,5};
     v1.pushback(6); //return v1={1,2,3,4,5,6}
 
-The header file should always be included. Note the header file no longer has ".h" than C
+Imagining you are going to build a Vector on your own, to be the most simple, you shall write some code like this. You are trying to build a Vector for int, and then for string, and then for float, and then whatever, it can be even any struct or class or vector itself(that's how we build a 2D array). You are not likely to build thousands of Vector for different data type
+
+    int int_vector (int n);
+    string str_vector(string s);
+
+And that is why we use the Template, so far you don't need to know how to use Template to build a Class(or may say your data type). Shall you only know how to use it and receive the gospel from God. And I can testify that Vector is the savior of all programmmers and C++ is the most powerful language. I said all of it in the name of Jesus Christ, Amen.
+
+    vector<string> str_v;
+    vector<int> int_v;
+
+And it came to pass that our eternal father hast also given us the way to operate the Vector. Behold that "= {1,2,3,4,5,6}", which is how we initialize the Vector. "{1,2,3,4,5,6}" generates a list and "=" assigns this list to the Vector v1. Also for sure is you declaring the Vector without assignments because Vector is built on a industrial standard, say, Vector would maintain empty if you don't assign value to it. However, it is still not recommended to leave data uninitialized as the gospel of God can not spread all over the memory hierachy. Behold that "pushback(6)", this is a method inside class Vector, of course shall you use "v1" +"." + "pushback()" instead of "pushback(v1)" as all of these methods are built inside the class Vector.
+
+And it came to pass that the we need to pray to god, as well as we need to include the header file. Behold that we don't need ".h" anymore, which is because C++ is the gospel from God and God loveth all of us. And I know that is true, for I have seen the power of including this header file. And I said all of it in the name of Jesus Christ, Amen.
 
     include "vector"
 
-This header file is included in the standard libaray, which means you can always include it with a compiler
+And it came to pass that we need to read the script, as well as we need to use the compiler. The compiler for C++ is g++ which should be installed together with gcc. Add the bin file to the path on your own of course. Use following command to check whether it has been installed.
 
     g++ --version
 
